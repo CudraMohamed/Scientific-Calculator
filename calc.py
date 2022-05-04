@@ -10,7 +10,7 @@ def multiply(a, b):
     return a*b
 
 def divide(a, b):
-    return a/b
+    return a//b
 
 def sqrt(a):               #for you to find the squareroot of a number, the number must be greater than 0
     result = math.sqrt(a)  #returns the square root of a number
@@ -56,18 +56,18 @@ while opr < 10:
     elif opr == 2:
         x2 = int(input("Enter x : "))
         y2 = int(input("Enter y : "))
-        res2 = add(x2, y2)
+        res2 = subtract(x2, y2)
         print("Subtraction = ",res2)
     elif opr == 3:
         x3 = int(input("Enter x : "))
         y3 = int(input("Enter y : "))
-        res3 = add(x3, y3)
+        res3 = multiply(x3, y3)
         print("Multiplication = ",res3)
     elif opr == 4:
         x4 = int(input("Enter x : "))
         y4 = int(input("Enter y : "))
-        res4 = add(x4, y4)
-        print("division = ",res4)
+        res4 = divide(x4, y4)
+        print("Division = ",res4)
     elif opr == 5:
         x5 = int(input("Enter x : "))
         res5 = exp(x5)
